@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/contato.css">
+    <script src="https://kit.fontawesome.com/6ce9315fcb.js" crossorigin="anonymous"></script>
+    <title>Stream Observer 👀</title>
+</head>
+
+<body>
+    <!-- INÍCIO HEADER -->
+    <nav>
+        <label class="logo"><a href="index.html"><img src="Logos/logo_animado.gif"></a></label>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html"><b class="selecionado">Contato</b></a></li>
+            <li><a href="servicos.html">Planos</a></li>
+            <li><a href="cadastro_streamer.html">Cadastre-se!</a></li>
+        </ul>
+
+        <label id="icone">
+            <i class="fas fa-bars"></i>
+            <!--ICONE MENU BARRA-->
+        </label>
+    </nav>
+    <!-- FIM HEADER -->
+
+    <!-- INÍCIO APRESENTAÇÃO -->
+    <div class="presentation">
+
+    </div>
+
+    <!-- FIM APRESENTAÇÃO -->
+
+    <!-- INÍCIO SERVIÇOS -->
+    <div class="container-services">
+        <h1>Fale Conosco</h1>
+        <p> nos ajude a entregar o melhor a você!</p>
+
+        <div class="content-img-services">
+            <div class="img-services">
+                <img src="Estilos/Imagens/telefone.svg">
+                <h3>Telefone/Whats</h3>
+                <p> (11) 4002-8922 </p>
+            </div>
+            <div class="img-services">
+                <img src="Estilos/Imagens/email.svg" alt="">
+                <h3>E-mail</h3>
+                <p> Suporte.SO@streamobserver.com.br</p>
+            </div>
+        </div>
+
+        <div class="container-doubts">
+            <div class="div-form">
+                <h2>Mande sua Mensagem para nós</h2>
+                <form class="form" action="https://formsubmit.co/pedrosk8b@gmail.com" method="POST">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Digite Sua Mensagem</label>
+                    <textarea name="message" id="message" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div class="div-location">
+
+                <h1>Endereço: </h1> 
+                <p><img src="Estilos/Imagens/localizacao.svg" alt="">Rua Haddock Lobo, 595 -<br>
+                    Cerqueira César, São Paulo - SP, 01414-001</p><br>
+                <button class="button-loc" onclick="mapa()">Ver no mapa</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- FIM SERVIÇOS -->
+
+    <!-- INÍCIO FOOTER -->
+    <footer>
+        <div class="container-footer">
+            <p>2021 Stream Observer 👀 | Todos os direitos reservados.
+                Desenvolvido por alunos BandTec.</p>
+        </div>
+    </footer>
+    <!-- FIM FOOTER -->
+
+    <!--INÍCIO ANIMAÇÃO MENU BARRA-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#icone').click(function () {
+                $("ul").toggleClass('slow')
+            })
+        })
+    </script>
+    <!--FIM ANIMAÇÃO MENU BARRA-->
+
+</body>
+
+</html>
+
+<script>
+
+    function mapa() {
+        window.location.href = "https://www.google.com/maps/place/Bandtec+Digital+School/@-23.5581164,-46.6638027,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce59d2b063f663:0xc567c0d16d0bc582!8m2!3d-23.5581213!4d-46.661614";
+    }
+    
+
+
+</script>

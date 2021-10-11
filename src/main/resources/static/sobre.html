@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/sobre.css">
+    <title>Sobre Nós</title>
+</head>
+<body>
+
+    <nav>
+        <label class="logo"><a href="index.html"><img src="Logos/logo_animado.gif"></a></label>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="sobre.html"><b class="selecionado">Sobre</b></a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="servicos.html">Planos</a></li>
+                <li><a href="cadastro_streamer.html">Cadastre-se!</a></li>
+            </ul>
+    
+            <label id="icone">
+                <i class="fas fa-bars"></i> <!--ICONE MENU BARRA-->
+            </label>
+    </nav>
+
+    <div id="cadastro" class="presentation">
+        <h2>Sobre Nós</h2>
+        <p>       Nascemos no ano de 2021 e estamos crescendo junto com o mercado de transmissão de jogos de vídeo game. Nosso objetivo é fazer de sua live a melhor! E ainda mitigar a perda de telespectadores do seu conteúdo para melhor aproveitamento tanto para o criador de conteúdo, quanto para o telespectador que não vai perder nenhum segundo da grande aventura!
+        </p> <br> <br>
+      </div>
+
+      <div class="container-services">
+        <h1>Nosso Time de Desenvolvimento</h1>
+
+      <div class="content-img-services">
+        <div class="img-services">
+            <img
+                src="Estilos/Imagens/Carol.jpg">
+            <h3>Carolina Costa</h3>
+            <p>Desenvolvedora Front-End</p>
+        </div>
+
+        <div class="img-services">
+            <img src="Estilos/Imagens/Joubert.jpeg">
+            <h3>Joubert Oliveira</h3>
+            <p>Product Owner</p>
+        </div>
+
+         <div class="img-services">
+            <img src="Estilos/Imagens/Florentino.jpeg">
+            <h3>Kennedy Florentino</h3>
+            <p>Desenvolvedor Back-End</p>
+         </div>
+
+         <div class="img-services">
+            <img src="Estilos/Imagens/Obi.jfif">
+            <h3>Kennedy Obi</h3>
+            <p>Gestor de T.I.</p>
+        </div>
+        <div class="img-services">
+            <img src="Estilos/Imagens/Pedro.jpeg"
+                alt="">
+            <h3>Pedro Viana</h3>
+            <p>Desenvolvedor Front-End</p>
+        </div>
+
+         <div class="img-services">
+            <img src="Estilos/Imagens/Vinicius.jpeg">
+            <h3>Vinicius Tomazin</h3>
+            <p>Gerente de Banco de Dados</p>
+         </div>
+     </div>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <p>2021 Stream Observer 👀 | Todos os direitos reservados.
+                Desenvolvido por alunos BandTec.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#icone').click(function(){
+                $("ul").toggleClass('slow')
+                })
+            })
+    </script>
+
+</body>
+</html>

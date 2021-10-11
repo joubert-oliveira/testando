@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/servicos.css">
+    <script src="https://kit.fontawesome.com/6ce9315fcb.js" crossorigin="anonymous"></script>
+    <title>Stream Observer 👀</title>
+</head>
+
+<body>
+    <!-- INÍCIO HEADER -->
+    <nav>
+        <label class="logo"><a href="index.html"><img src="Logos/logo_animado.gif"></a></label>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="servicos.html"><b class="selecionado">Planos</b></a></li>
+            <li><a href="cadastro_streamer.html">Cadastre-se!</a></li>
+        </ul>
+
+        <label id="icone">
+            <i class="fas fa-bars"></i>
+            <!--ICONE MENU BARRA-->
+        </label>
+    </nav>
+    <!-- FIM HEADER -->
+
+    <!-- INÍCIO APRESENTAÇÃO -->
+    <div class="services">
+        <div class="sombra"></div>
+        <!-- <div class="container-servics">
+            <div class="div-services">
+                <div class="valor">
+                    <h5>Pequeno Streamer</h5>
+                    <span class="preco-real">R$ 500</span><br>
+                    <span>POR MÊS</span>
+                </div>
+                <p>Para stremers que estão iniciando a realizarem transmições multiplataforma. Com este plano o aumento de viewers é inevitavel na sua stream</p>
+                <button class="button-valor um">Obter plano</button>
+            </div>
+            <div class="div-services">
+                <div class="valor">
+                    <h5>Grande Streamer</h5>
+                    <span class="preco-real">R$ 1000</span><br>
+                    <span>POR MÊS</span>
+                </div>
+                <p>Voltado para stremers com bastantes visualizações e que ja tem certas audiencias em outras plataformas. O plano a você monitorar sua stream e aumentar o contato com seus viewers</p>
+                <button class="button-valor dois">Obter Plano</button>
+            </div>
+            <div class="div-services">
+                <div class="valor">
+                    <h5>Grande corporação</h5>
+                    <span class="preco-real">R$ 2200</span><br>
+                    <span>POR MÊS</span>
+                </div>
+                <p>Grandes Corporações que realizam campeonatos ao vivo multiplataforma, é ideal para não perder audiência por conta de instabilidade na transmição.</p>
+                <button class="button-valor tres">Obter plano</button>
+            </div>
+        </div> -->
+
+    </div>
+    <!-- FIM APRESENTAÇÃO -->
+
+    <!-- INÍCIO SERVIÇOS -->
+
+    <!-- FIM SERVIÇOS -->
+
+    <!-- INÍCIO FOOTER -->
+    <footer>
+        <div class="container-footer">
+            <p>2021 Stream Observer 👀 | Todos os direitos reservados.
+                Desenvolvido por alunos BandTec.</p>
+        </div>
+    </footer>
+    <!-- FIM FOOTER -->
+
+    <!--INÍCIO ANIMAÇÃO MENU BARRA-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#icone').click(function () {
+                $("ul").toggleClass('slow')
+            })
+        })
+    </script>
+    <!--FIM ANIMAÇÃO MENU BARRA-->
+
+</body>
+
+</html>

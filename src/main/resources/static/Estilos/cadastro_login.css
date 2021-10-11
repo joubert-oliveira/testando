@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Poppins&display=swap%27');
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.selecionado{
+    color: purple;
+    }
+    
+    nav{
+        width: 100%;
+        height: 80px;
+        background: black;
+    }
+    
+    label.logo{
+        padding: 0 100px;
+        line-height: 80px;
+    }
+    
+    label.logo a{
+        border: none;
+    }
+    
+    label img{
+        height: 70px;
+        width: 130px;
+        padding-top: 5px;
+        border: transparent;
+    }
+    
+    nav ul{
+        float: right;
+        margin-right: 40px;
+    }
+    
+    nav li{
+        display: inline-block;
+        margin: 0 8px;
+        line-height: 80px;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    nav a{
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        padding: 7px 10px;
+        border-radius: 3px;
+    }
+    
+    a.active,a:hover{
+        border: 1px solid white;
+        transition: .5s;
+    }
+    
+    nav #icone{
+        color: white;
+        font-size: 30px;
+        line-height: 80px;
+        float: right;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    @media(max-width: 1048px){
+        label.logo{
+            font-size: 32px;
+            padding-left: 60px;
+        }
+        nav ul{
+            margin-right: 20px;
+        }
+        nav a{
+            font-size: 17px;
+        }
+    }
+    
+    @media(max-width: 909px){
+        nav #icone{
+            display: block;
+        }
+        nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2f3640;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s ;
+        }
+        nav li{
+            display:block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav a{
+            font-size: 20px;
+        }
+        nav.active,a:hover{
+            border: none;
+            color: purple;
+        }
+        nav ul.slow{
+            left: 0;
+        }
+    }
+
+.container_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;    
+    background-color: #6344a67c;
+}
+
+.content{
+    border-radius: 15px;
+    background-color: white;
+    width: 960px;
+    height: 90%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background: url("Imagens/fundo.gif");
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 0;
+}
+
+.titulo_padrao{
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.titulo_branco{
+    color: white;
+}
+
+.titulo_verde{
+    color: #352559;
+}
+
+.descricao{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.descricao_branca{
+color: white;
+}
+
+.descricao_cinza{
+color: #7f8c8d;
+}
+
+.btn_login{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 180px;
+    align-self: center;
+    margin-top: 1rem 0;
+}
+
+.btn_primario{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn_primario:hover{
+    background-color: white;
+    color: #352559;
+    transition: background 1s;
+}
+
+.btn_secundario{
+    background-color: #352559;
+    border: 1px solid white;
+}
+
+.btn_secundario:hover{
+    background-color: white;
+    border: 1px solid #352559;
+    color: #352559;
+    transition: background 1s;
+}
+
+
+.first_column{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.second_column{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first_content{
+    display: flex;
+}
+
+.first_content .second_column{
+  z-index: 12;  
+}
+
+.social_midia{
+    margin: 1rem 0;
+}
+
+.list_social_midia{
+    display: flex;
+}
+
+.item_social_midia{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item_social_midia:hover{
+    background-color: #352559;
+    color: white;
+    border: none;
+}
+
+.item_social_midia:hover a{
+    color: white;
+}
+
+.item_social_midia:not(:first-child){
+    margin-left: 10px;
+}
+
+.item_social_midia a{
+    color: #95a5a6;
+    border: none;
+}
+
+.formulario_cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.senha{
+    color: #7f8c8d;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.senha a{
+    border: none;
+}
+
+.formulario_cadastro input{
+   height: 45px;
+   border: none;
+   background-color: transparent;
+   margin: 6px;
+   width: 100%;
+}
+
+.label_input{
+    background-color: #6b52a74b;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon_modify{
+    color: #7f8c8d;
+    padding: 0 5px;
+}
+
+
+/*Segundo Conteudo*/
+
+.second_content{
+    position: absolute;
+    display: flex;
+}
+
+.second_content .first_column{
+    order: 2;
+    z-index:  -1;
+}
+
+.second_content .second_column{
+    order: 1;
+    z-index: -1;
+}
+
+.sign_in_js .first_content .first_column,
+.sign_in_js .first_content .second_column{
+ z-index: -1;
+ opacity: 0;
+}
+
+.sign_in_js .second_content .first_column{
+    z-index: 13;
+}
+
+.sign_in_js .second_content .second_column{
+z-index: 11;
+}
+
+.sign_in_js .content::before{
+    left: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    animation: slidein 3s;
+
+    z-index: 12;
+}
+
+.sign_up_js .content::before{
+    animation: slideout 3s;
+
+    z-index: 12;
+}
+
+.sign_up_js .second_content .first_column,
+.sign_up_js .second_content .second_column{
+    z-index: -1;
+    opacity: 0;
+}
+
+.sign_up_js .first_content .first_column{
+    z-index: 13;
+}
+
+.sign_up_js .first_content .second_column{
+    z-index: 11;
+}
+
+/*Deslocamento de conteúdo atrás do Content::BEFORE*/
+.sign_in_js .first_content .second_column{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsquerda 3s;
+}
+
+.sign_up_js .second_content .second_column{
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDireita 3s;
+}
+
+/*Animação CSS para o conteúdo*/
+@keyframes deslocamentoEsquerda{
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25%{
+        left: -80px;
+        opacity: .5;
+    }
+
+    50%{
+        left: -100px;
+        opacity: .2;
+    }
+
+    to{
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes deslocamentoDireita{
+    from{
+        left: 0;
+        z-index: 12;
+        opacity: 0;
+    }
+
+    25%{
+        left:80px;
+        opacity: .2;
+    }
+
+    50%{
+        left: 100px;
+        opacity: .5;
+    }
+
+    to{
+        left: 110px;
+        z-index: -1;
+        opacity: 1;
+    }
+}
+/*FIM Animação de Deslocamento*/
+
+
+/* INÍCIO - Animação da Tela*/
+@keyframes slidein{
+    from{
+        left: 0;
+        width: 40%;
+    }
+
+    25%{
+        left: 5%;
+        width: 50%;
+    }
+
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+
+    75%{
+        left: 45%;
+        width: 50%;
+    }
+
+    to{
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout{
+    from{
+        left: 60%;
+        width: 40%;
+    }
+
+    25%{
+        left: 45%;
+        width: 50%;
+
+    }
+
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+
+    75%{
+        left: 5%;
+        width: 50%;
+    }
+
+    to{
+        left: 0;
+        width: 40%;
+    }
+}
+/*FIM Animação da Tela*/
+
+/*Responsividade*/
+@media screen and (max-width: 1040px) {
+    .content{
+        width: 100%;
+        height: 100%;
+    }
+
+    .content::before{
+        width: 100%;
+        height: 40%;
+        top: 0;
+        border-radius: 0;
+    }
+
+    .first_content, .second_content{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .first_column, .second_column{
+        width: 100%;
+    }
+
+    .sign_in_js .content::before{
+        top: 60%;
+        left: 0;
+        border-radius: 0px;
+    }
+
+    .formulario_cadastro{
+        width: 90%;
+    }
+
+
+    /*Animação Responsiva*/
+    @keyframes deslocamentoEsquerda{
+        from{
+            top: 0;
+            opacity: 1;
+            z-index: 12;
+        }
+    
+        25%{
+            top: -80px;
+            opacity: .5;
+        }
+    
+        50%{
+            top: -100px;
+            opacity: .2;
+        }
+    
+        to{
+            top: -110px;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+    
+    @keyframes deslocamentoDireita{
+        from{
+            top: 0;
+            z-index: 12;
+            opacity: 0;
+        }
+    
+        25%{
+            top:80px;
+            opacity: .2;
+        }
+    
+        50%{
+            top: 100px;
+            opacity: .5;
+        }
+    
+        to{
+            top: 110px;
+            z-index: -1;
+            opacity: 1;
+        }
+    }
+    /*FIM Animação de Deslocamento*/
+    
+    
+    /* INÍCIO - Animação da Tela*/
+    @keyframes slidein{
+        from{
+            top: 0;
+            height: 40%;
+        }
+    
+        25%{
+            top: 5%;
+            height: 50%;
+        }
+    
+        50%{
+            top: 25%;
+            height: 60%;
+        }
+    
+        75%{
+            top: 45%;
+            height: 50%;
+        }
+    
+        to{
+            top: 60%;
+            height: 40%;
+        }
+    }
+    
+    @keyframes slideout{
+        from{
+            top: 60%;
+            height: 40%;
+        }
+    
+        25%{
+            top: 45%;
+            height: 50%;
+    
+        }
+    
+        50%{
+            top: 25%;
+            height: 60%;
+        }
+    
+        75%{
+            top: 5%;
+            height: 50%;
+        }
+    
+        to{
+            top: 0;
+            height: 40%;
+        }
+    }
+    /*FIM Animação tela responsiva*/
+
+}
+
+@media screen and (max-width: 740px){
+    .formulario_cadastro{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 405px){
+    .formulario_cadastro{
+        width: 100%;
+    }
+}
+
+.container-footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-footer p {
+    font-family: 'Nunito', sans-serif;
+    white-space: pre-line;
+    color: #dee2e6;
+}

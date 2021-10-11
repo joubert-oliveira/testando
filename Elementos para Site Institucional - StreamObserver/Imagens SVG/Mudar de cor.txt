@@ -1,0 +1,6 @@
+Mudar a cor do SVG:
+
+1 - Botão direito no arquivo
+2 - Abrir como: Visual Studio Code
+3 - Procurar o atributo "fill"
+4 - Mudar para o HEX escolhido
