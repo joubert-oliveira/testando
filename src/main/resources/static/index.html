@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/index.css">
+    <script src="https://kit.fontawesome.com/6ce9315fcb.js" crossorigin="anonymous"></script>
+    <title>Stream Observer 👀</title>
+</head>
+
+<body>
+    <!-- INÍCIO HEADER -->
+    <nav>
+        <label class="logo"><a href="index.html"><img src="Logos/logo_animado.gif"></a></label>
+        <ul>
+            <li class="active"><a href=""><b class="selecionado">Home</b></a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="servicos.html">Planos</a></li>
+            <li><a href="#cadastro">Cadastre-se!</a></li>
+        </ul>
+
+        <label id="icone">
+            <i class="fas fa-bars"></i>
+            <!--ICONE MENU BARRA-->
+        </label>
+    </nav>
+    <!-- FIM HEADER -->
+
+    <!--INÍCIO ANIMAÇÃO IMAGENS-->
+    <div class="slide_fotos">
+        <p>A solução para o downtime de suas lives!</p>
+        <img class="logo_name" src="Estilos/Imagens/logo_semfundo.png">
+        <div class="div_btn">
+            <a href="cadastro_telespectador.html"><button class="btn_inicial"><span>Sou Viewer</span></button></a> <br>
+            <br>
+            <a href="cadastro_streamer.html"><button class="btn_inicial"><span>Sou Streamer</span></button></a>
+
+        </div>
+    </div>
+
+    <!-- INÍCIO SERVIÇOS -->
+    <div class="container-services">
+        <h1>Serviço completo para o seu conteúdo!</h1>
+
+        <div class="content-img-services">
+            <div class="img-services">
+                <img src="Estilos/Imagens/Icone_Twitch.png">
+                <h3>Perder views? Jamais!</h3>
+                <p>Nossa aplicação conseguirá transmitir sua
+                    live nas três principais plataformas de streaming. </p>
+            </div>
+            <div class="img-services">
+                <img src="Estilos/Imagens/Icone_Streamer.png" alt="">
+                <h3>Seus Streamers Favoritos em um só lugar!</h3>
+                <p>Acompanhe seus streamers favoritos em um
+                    só site e em quais plataformas ele está ao vivo. </p>
+            </div>
+
+            <div class="img-services">
+                <img src="Estilos/Imagens/Icone_Atencao.png">
+                <h3>Aviso Antecedente de Erros</h3>
+                <p>Monitoramento da sua máquina para mitigar a queda de sua transmissão.
+                </p>
+            </div>
+        </div>
+     </div>
+
+        <div class="box-time">
+            <div class="left-box-time">
+                <p> <b>Nosso Time</b> <br>
+                    <i class="descricao_time">Nossa equipe é formada por profissionais treinados a oferecer o melhor
+                        para o seu entretenimento! Conheça-os apertando os botões ao lado ou aperte
+                    o botão abaixo e conheça mais sobre nós!</i> <br>
+                    <button class="btn_sobre"><a href="sobre.html" style="color: white;">Conheça-nos!</a></button>
+                </p>
+            </div>
+
+            <div class="right-box-time">
+                <div style="display: block;"> <span id="nome_integrante"
+                        style="float: left; padding-top: 10px;">Carolina Costa</span> </div> <br>
+                <div id="foto_option" class="btn">
+                    <img src="Estilos/Imagens/Carol.jpg" style="height: 12em; width: 12em; border-radius: 8em; background-size: cover">
+                </div>
+
+
+                <div class="box-profile">
+                    <div onclick="btn_carol()" id="option_carol" style=" background-color: black;
+                        ;" class="box-profile-option"></div>
+                    <div onclick="btn_joubert()" id="option_joubert" class="box-profile-option"></div>
+                    <div onclick="btn_florentino()" id="option_florentino" class="box-profile-option"></div>
+                    <div onclick="btn_obi()" id="option_obi" class="box-profile-option"></div>
+                    <div onclick="btn_pedro()" id="option_pedro" class="box-profile-option"></div>
+                    <div onclick="btn_vinicius()" id="option_vinicius" class="box-profile-option"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-doubts">
+                <div class="imagem">
+                 <img src="Estilos/Imagens/yasuo.png" class="yasuo">   
+                </div>
+                
+                <div class="box_duvidas">
+                <p>Dúvidas?</p>
+                <a href="contato.html">
+                    <button class="btn_inicial">
+                        <span>Contate-nos</span>
+                        
+                    </button>
+                </a>
+                </div>
+                
+        </div>
+
+    
+    <!-- FIM SERVIÇOS -->
+
+    <!-- INÍCIO FOOTER -->
+    <footer>
+        <div class="container-footer">
+            <p>2021 Stream Observer 👀 | Todos os direitos reservados.
+                Desenvolvido por alunos BandTec.</p>
+        </div>
+    </footer>
+    <!-- FIM FOOTER -->
+
+    <!--INÍCIO ANIMAÇÃO MENU BARRA-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#icone').click(function () {
+                $("ul").toggleClass('slow')
+            })
+        })
+    </script>
+    <!--FIM ANIMAÇÃO MENU BARRA-->
+
+</body>
+
+</html>
+
+<script>
+
+    var carol = 'Estilos/Imagens/Carol.jpg'
+    var joubert = 'Estilos/Imagens/Joubert.jpeg'
+    var florentino = 'Estilos/Imagens/Florentino.jpeg'
+    var obi = 'Estilos/Imagens/Obi.jfif'
+    var pedro = 'Estilos/Imagens/Pedro.jpeg'
+    var vinicius = 'Estilos/Imagens/Vinicius.jpeg'
+
+
+
+    function btn_joubert() {
+        nome_integrante.innerHTML = 'Joubert Oliveira';
+        option_joubert.style.backgroundColor = 'black'
+        option_carol.style.backgroundColor = '#ccc'
+        option_florentino.style.backgroundColor = '#ccc'
+        option_obi.style.backgroundColor = '#ccc'
+        option_pedro.style.backgroundColor = '#ccc'
+        option_vinicius.style.backgroundColor = '#ccc'
+
+        foto_option.innerHTML = `<img style="height: 12em; width: 12em; border-radius: 8em; background-size: cover" src="${joubert}"> `;
+    }
+
+    function btn_carol() {
+        nome_integrante.innerHTML = 'Carolina Costa';
+        option_carol.style.backgroundColor = 'black'
+        option_joubert.style.backgroundColor = '#ccc'
+        option_florentino.style.backgroundColor = '#ccc'
+        option_obi.style.backgroundColor = '#ccc'
+        option_pedro.style.backgroundColor = '#ccc'
+        option_vinicius.style.backgroundColor = '#ccc'
+
+        foto_option.innerHTML = `<img style="height: 12em; width: 12em; border-radius: 8em; background-size: cover" src="${carol}"> `;
+
+    }
+
+    function btn_florentino() {
+        nome_integrante.innerHTML = 'Kennedy Florentino';
+        option_florentino.style.backgroundColor = 'black'
+        option_carol.style.backgroundColor = '#ccc'
+        option_joubert.style.backgroundColor = '#ccc'
+        option_obi.style.backgroundColor = '#ccc'
+        option_pedro.style.backgroundColor = '#ccc'
+        option_vinicius.style.backgroundColor = '#ccc'
+
+        foto_option.innerHTML = `<img style="height: 12em; width: 12em; border-radius: 8em;" src="${florentino}"> `;
+
+    }
+
+    function btn_obi() {
+        nome_integrante.innerHTML = 'Kennedy Obi';
+        option_carol.style.backgroundColor = '#ccc'
+        option_joubert.style.backgroundColor = '#ccc'
+        option_florentino.style.backgroundColor = '#ccc'
+        option_obi.style.backgroundColor = 'black'
+        option_pedro.style.backgroundColor = '#ccc'
+        option_vinicius.style.backgroundColor = '#ccc'
+
+        foto_option.innerHTML = `<img style="height: 12em; width: 12em; border-radius: 8em; background-size: cover" src="${obi}"> `;
+
+    }
+
+    function btn_pedro() {
+        nome_integrante.innerHTML = 'Pedro Viana';
+        option_carol.style.backgroundColor = '#ccc'
+        option_joubert.style.backgroundColor = '#ccc'
+        option_florentino.style.backgroundColor = '#ccc'
+        option_obi.style.backgroundColor = '#ccc'
+        option_pedro.style.backgroundColor = 'black'
+        option_vinicius.style.backgroundColor = '#ccc'
+
+        foto_option.innerHTML = `<img style="height: 12em; width: 12em; border-radius: 8em; background-size: cover" src="${pedro}"> `;
+
+    }
+
+    function btn_vinicius() {
+        nome_integrante.innerHTML = 'Vinicius Tomazin';
+        option_carol.style.backgroundColor = '#ccc'
+        option_joubert.style.backgroundColor = '#ccc'
+        option_florentino.style.backgroundColor = '#ccc'
+        option_obi.style.backgroundColor = '#ccc'
+        option_pedro.style.backgroundColor = '#ccc'
+        option_vinicius.style.backgroundColor = 'black'
+
+        foto_option.innerHTML = `<img style="height: 12em; width: 12em; border-radius: 8em; background-size: cover" src="${vinicius}"> `;
+    }
+
+</script>
+
+</html>

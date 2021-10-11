@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Poppins&display=swap%27');
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.selecionado{
+    color: purple;
+    }
+    
+    nav{
+        width: 100%;
+        height: 80px;
+        background: black;
+    }
+    
+    label.logo{
+        padding: 0 100px;
+        line-height: 80px;
+    }
+    
+    label.logo a{
+        border: none;
+    }
+    
+    label img{
+        height: 70px;
+        width: 130px;
+        padding-top: 5px;
+        border: transparent;
+    }
+    
+    nav ul{
+        float: right;
+        margin-right: 40px;
+    }
+    
+    nav li{
+        display: inline-block;
+        margin: 0 8px;
+        line-height: 80px;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    nav a{
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        padding: 7px 10px;
+        border-radius: 3px;
+    }
+    
+    a.active,a:hover{
+        border: 1px solid white;
+        transition: .5s;
+    }
+    
+    nav #icone{
+        color: white;
+        font-size: 30px;
+        line-height: 80px;
+        float: right;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    @media(max-width: 1048px){
+        label.logo{
+            font-size: 32px;
+            padding-left: 60px;
+        }
+        nav ul{
+            margin-right: 20px;
+        }
+        nav a{
+            font-size: 17px;
+        }
+    }
+    
+    @media(max-width: 909px){
+        nav #icone{
+            display: block;
+        }
+        nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2f3640;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s ;
+        }
+        nav li{
+            display:block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav a{
+            font-size: 20px;
+        }
+        nav.active,a:hover{
+            border: none;
+            color: purple;
+        }
+        nav ul.slow{
+            left: 0;
+        }
+    }
+
+    .presentation{
+        background: url("Imagens/fundo_principal.png") no-repeat
+        center center;
+        background-size: cover;
+        height: calc(100vh - 80px);
+    }
+    
+    .presentation a{
+        border: none;
+    }
+    
+    .presentation {
+        text-align: center;
+        width: 100%;
+        height: 45em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .presentation p {
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        letter-spacing: 0.05em;
+        font-size: 1.5em;
+        font-weight: 800;
+        white-space: pre-line;
+        text-align: justify;
+        margin: 35px;
+    }
+
+    .presentation h2{
+        font-size: 3em;
+        color: #fff;
+    }
+
+.container-services {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid #8c3a6f;
+}
+
+.container-services h1 {
+    padding-top: 50px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.container-services img {
+    text-align: center;
+    border-radius: 8em;
+    height: 12em;
+    width: 12em;
+}
+
+.content-img-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+    padding-top: 25px;
+}
+
+@media(max-width: 1048px){
+    .content-img-services{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 3em;
+    }
+}
+
+
+.img-services h3 {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.img-services p {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    white-space: pre-line;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding-bottom: 50px;
+}
+
+.container-footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-footer p {
+    font-family: 'Nunito', sans-serif;
+    white-space: pre-line;
+    color: #dee2e6;
+}
